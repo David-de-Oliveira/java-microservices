@@ -12,8 +12,10 @@ import javax.persistence.Table;
 @Table(name="enderecos")
 public class Endereco {
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	private String logadouro;
+	private String logradouro;
 	private Integer numero;
 	private String bairro;
 	private String cidade;
@@ -24,8 +26,7 @@ public class Endereco {
 	@JoinColumn(name="id_cliente")
 	private Cliente cliente;
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
 	public Integer getId() {
 		return id;
 	}
@@ -33,10 +34,10 @@ public class Endereco {
 		this.id = id;
 	}
 	public String getLogadouro() {
-		return logadouro;
+		return logradouro;
 	}
-	public void setLogadouro(String logadouro) {
-		this.logadouro = logadouro;
+	public void setLogadouro(String logradouro) {
+		this.logradouro = logradouro;
 	}
 	public Integer getNumero() {
 		return numero;
