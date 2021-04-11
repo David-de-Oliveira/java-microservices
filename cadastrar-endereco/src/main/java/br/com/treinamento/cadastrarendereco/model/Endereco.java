@@ -33,10 +33,10 @@ public class Endereco {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public String getLogadouro() {
+	public String getLogradouro() {
 		return logradouro;
 	}
-	public void setLogadouro(String logradouro) {
+	public void setLogradouro(String logradouro) {
 		this.logradouro = logradouro;
 	}
 	public Integer getNumero() {
